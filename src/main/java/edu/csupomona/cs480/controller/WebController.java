@@ -37,6 +37,16 @@ public class WebController {
     @Autowired
     private UserManager userManager;
 
+    
+    /**
+     * My test HTTP API @curvejumper(michael ortiz)
+     **/
+    @RequestMapping(value = "/curvejumper", method = RequestMethod.GET)
+    String curveCheck() {
+    	return "Hey, it's Michael!";
+    }
+    
+    
     /**
      * This is a simple example of how the HTTP API works.
      * It returns a String "OK" in the HTTP response.
