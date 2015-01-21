@@ -61,6 +61,11 @@ public class WebController {
     	// with the URL: http://localhost:8080/
         return "OK";
     }
+	@RequestMapping(value = "/cs480/dhreply", method = RequestMethod.GET)
+    String dhreply() 
+	{
+        return "David Ho's webpage";
+    }
     @RequestMapping(value = "/cs480/dalin1120", method = RequestMethod.GET)
     String tester()
     {
